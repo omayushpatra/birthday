@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, Anarkali</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #fdeff9, #ecf0f3);
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    section {
+      padding: 80px 20px;
+    }
+    h1, h2 {
+      color: #e91e63;
+    }
+    .fade-in {
+      animation: fadeIn 2s ease-in forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    .card {
+      background: white;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      max-width: 700px;
+    }
+    .yes-button {
+      background: #e91e63;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .yes-message {
+      display: none;
+      margin-top: 20px;
+      font-size: 20px;
+      color: #4caf50;
+      font-weight: bold;
+      animation: fadeIn 1s ease-in forwards;
+    }
+    footer {
+      padding: 40px 20px;
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+  <script>
+    function showYesMessage() {
+      const message = document.getElementById("yes-response");
+      message.style.display = "block";
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Background Music -->
+<p style="color: #e91e63; font-weight: bold; margin-top: 20px;">🔊 Don't forget to play the music for the full surprise!</p>
+  <audio autoplay loop>
+    <source src="https://raw.githubusercontent.com/omayushpatra/birthday-audio/main/Happy%20Birthday%20Music%20%20Celebrate%20with%20This%20Song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+<button onclick="document.querySelector('audio').play()">🎶 Play Music</button>
+  <section class="fade-in">
+    <h1>Happy Birthday, Anarkali 🎉</h1>
+    <p>Today, the stars shine for you...</p>
+  </section>
+
+  <section class="card fade-in">
+    <h2>The Day the Stars Paused</h2>
+    <p>On this day, the sky held its breath. The moon dimmed itself in awe. Because someone too radiant was born...</p>
+  </section>
+
+  <section class="card fade-in">
+    <h2>You’re Not Just a Name</h2>
+    <p>You’re the laugh in my darkest moment, the pout when things don’t go your way, the warmth I carry in my heart.</p>
+  </section>
+
+  <section class="card fade-in">
+    <h2>If I Could Paint You</h2>
+    <p>I’d use the warmest sunrise and softest shadows… and title it: "My favorite masterpiece."</p>
+  </section>
+
+  <section class="card fade-in">
+    <h2>Today, and Every Day After</h2>
+    <p>No matter how far we are, I’ll always find a way to reach your heart. One day, we’ll laugh about this distance and how it never stopped us.</p>
+  </section>
+
+  <section class="card fade-in">
+    <h2>One Last Thing...</h2>
+    <p>Will you let me make you smile every birthday for the rest of our lives?</p>
+    <button class="yes-button" onclick="showYesMessage()">Yes ✅</button>
+    <p id="yes-response" class="yes-message">I knew it 😌❤️ Go check out your other gifts too!</p>
+  </section>
+
+  <footer>
+    Made with love by someone who thinks you're the best thing in the universe 💖
+  </footer>
+
+</body>
+</html>
